@@ -1,7 +1,8 @@
 require_relative 'lib/gerararquivo'
 require_relative 'lib/buscarcommits'
+require_relative 'lib/organizarcommits'
 
 buscarCommits = BuscarCommits.new
 
-puts "Gerando arquivo"
-GerarArquivo.create(buscarCommits.get_response_json)
+commitsOrganizados = OrganizarCommits.new(buscarCommits.get_response_json)
+GerarArquivo.create(commitsOrganizados.commits)
