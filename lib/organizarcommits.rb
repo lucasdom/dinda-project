@@ -4,14 +4,14 @@ class OrganizarCommits
 	attr_reader :commits
 	
 	def initialize(params)
-		@commits = {}
+		@commits = Hash.new
 		@commits = filtrar_unificar_commits(params)
 	end
 	
 	private
 
 	def filtrar_unificar_commits(params)
-
+			
 		params.each do |item|
 			usuario = item['commit']['author']
 			key = usuario['email']

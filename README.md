@@ -2,11 +2,17 @@
 
 ## Rodar o projeto
 
-Para rodar o projeto, execute o seguinte comando:
+Para rodar o projeto, execute o seguinte comando na pasta raiz do projeto:
 
-Windowns
 ```ruby
-Ruby main.rb
+ruby main.rb
+```
+
+## Testar o projeto
+Para testar o projeto, execute o seguinte comando:
+
+```ruby
+rspec spec
 ```
 
 ## License

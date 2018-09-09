@@ -9,7 +9,7 @@ class BuscarCommits
 		@response = Net::HTTP.get_response(uri)
 	end
 
-	def get_response_json
+	def get_json
 		JSON.parse(@response.body)
 	end
 

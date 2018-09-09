@@ -4,5 +4,5 @@ require_relative 'lib/organizarcommits'
 
 buscarCommits = BuscarCommits.new
 
-commitsOrganizados = OrganizarCommits.new(buscarCommits.get_response_json)
+commitsOrganizados = OrganizarCommits.new(buscarCommits.get_json)
 GerarArquivo.create(commitsOrganizados.commits)
